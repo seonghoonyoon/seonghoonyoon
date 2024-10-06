@@ -1,0 +1,10 @@
+body {
+  font-family: "Noto Sans Mono", monospace;
+  background-color: rgb(216, 213, 196);
+  color : rgb(58, 52, 95);
+}
+
+h1 {
+    
+    font-size: medium;
+}
