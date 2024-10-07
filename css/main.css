@@ -3,31 +3,45 @@ body {
   font-size: medium;
   background-color: rgb(48, 46, 63);
   color : rgb(233, 230, 213);
+  
 }
 
-h1 {
-    font-size: medium
+header {
+  display: flex;
 }
 
-a:link {
-  color: rgb(216, 213, 196);
-  background-color: transparent;
-  text-decoration: none;
+nav {
+  width: 300px;
 }
 
-a:visited {
-  color: rgb(216, 213, 196);
-  background-color: rgb(255, 150, 150);
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: rgb(84, 82, 104);
 }
 
-a:hover {
-  background-color: rgb(255, 0, 0);
+/* image open */
+.click {
+  cursor: pointer;
+  user-select: none;
 }
 
-a:active {
-  background-color: rgb(255, 150, 150);
+p, #image {
+  margin-left: -10;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#image {
+  width: 200px;
+  height: auto;
+}
+
+/* tree */
 ul, #UL1 {
   list-style-type: none;
 }
