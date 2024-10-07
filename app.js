@@ -1,3 +1,0 @@
-function button() {
-    alert("hi")
-}

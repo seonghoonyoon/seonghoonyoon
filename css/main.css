@@ -1,10 +1,78 @@
 body {
   font-family: "Noto Sans Mono", monospace;
-  background-color: rgb(216, 213, 196);
-  color : rgb(58, 52, 95);
+  font-size: medium;
+  background-color: rgb(48, 46, 63);
+  color : rgb(233, 230, 213);
 }
 
 h1 {
-    
-    font-size: medium;
+    font-size: medium
 }
+
+a:link {
+  color: rgb(216, 213, 196);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(216, 213, 196);
+  background-color: rgb(255, 150, 150);
+}
+
+a:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+a:active {
+  background-color: rgb(255, 150, 150);
+}
+
+ul, #UL1 {
+  list-style-type: none;
+}
+
+#UL1 {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+/*
+ul.breadcrumb {
+  padding: 10px 10px;
+  list-style: none;
+  background-color: transparent;
+}
+
+ul.breadcrumb li {
+  display: list-item;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 5px;
+  content: "/\00a0";
+}
+*/
