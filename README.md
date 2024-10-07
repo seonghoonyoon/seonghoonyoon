@@ -1,1 +1,2 @@
-# seonghoonyoon.github.io
+website for joseph yoon
+josephyoon.com
