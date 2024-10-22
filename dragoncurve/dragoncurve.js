@@ -1,5 +1,5 @@
 let points = [];
-let length = 4;
+let length = 3;
 let width = 1000;
 let height = width;
 let startA = [width / 2, height / 2];
