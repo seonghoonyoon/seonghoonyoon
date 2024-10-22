@@ -14,6 +14,9 @@ function setup() {
 }
 
 function draw() {
+  let button = createButton("step");
+  button.id("buttons");
+  button.position(0, 18);
   strokeWeight(1);
   colorMode(HSB);
   for (let i = ceil(points.length / 2) - 1; i < points.length - 1; i++) {
@@ -28,9 +31,10 @@ function draw() {
   fill(255);
   noStroke();
   //points.push([random(width), random(height)]);
+  button.mousePressed(next);
 }
 
-function mouseClicked() {
+function next() {
   if (points.length < 130000) {
     //angle = random(angle-0.01, angle+0.01)
     points = rot(points, points[points.length - 1]);
