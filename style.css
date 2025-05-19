@@ -1,3 +1,22 @@
+body {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: medium;
+  background-color: rgb(46, 60, 63);
+  color : rgb(233, 230, 213);
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 0, 0);
+}
+
+header {
+  display: flex;
+}
+
 html, body {
   margin: 10;
   padding: 10;
@@ -14,6 +33,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1 {
-  font-size: 1.25em;
-  color: #333;
+  font-size: 2em;
+  font-family: dunkel-serif-expanded, sans-serif;
 }
