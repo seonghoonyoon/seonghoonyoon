@@ -2,38 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>joseph yoon</title>
-
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script>
-    (function (d) {
-      var config = {
-        kitId: 'tgb0uvv',
-        scriptTimeout: 3000,
-        async: true
-      },
-        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-    })(document);
-  </script>
 </head>
 
 <body>
-  <h1>윤성훈</h1>
-  <h2>joseph yoon</h2>
-  <div id="navbar"></div>
-  <script>
-    fetch("navbar.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("navbar").innerHTML = data;
-      })
-      .catch(error => console.error("Error loading navbar:", error));
-  </script>
-  <h3>home</h3>
-  <p>welcome.</p>
+  <h1>joseph yoon</h1>
 </body>
 
 </html>
