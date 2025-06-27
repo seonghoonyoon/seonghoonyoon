@@ -1,3 +1,3 @@
-## First Post
+## Thought-001
 
-Test. Hello.
+The quick brown fox jumps over the lazy dog.
