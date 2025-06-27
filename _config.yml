@@ -18,7 +18,7 @@ instagram_username: jsphyn
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-remote_theme: pages-themes/minimal@v0.2.0
+theme: jekyll-theme-minimal
 
 rss: rss
 
