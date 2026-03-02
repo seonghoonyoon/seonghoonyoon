@@ -6,13 +6,13 @@
       "description": "Paintings in oil, acrylic, and gouache.",
       "tags": [
         "paintings"
-      ],
-      "thumbnail": "/assets/img/artwork1.svg",
-      "page": "/projects/paintings.html",
-      "images": [
-        {
-          "src": "/assets/img/artwork1.svg",
-          "alt": "Painting 1",
+      {
+        "id": "rocks",
+        "title": "Rocks",
+        "description": "Paintings in oil, acrylic, and gouache.",
+        "tags": ["Paintings"],
+        "thumbnail": "/assets/img/artwork1.svg",
+        "page": "/projects/rocks.html",
           "caption": "Painting 1 — 2024",
           "description": "Painting 1 — 2024"
         },
