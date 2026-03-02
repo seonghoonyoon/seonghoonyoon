@@ -7,26 +7,23 @@
       "tags": [
         "Paintings"
       ],
-      "thumbnail": "/assets/img/Rocks/rocks_pt3.heic",
+      "thumbnail": "/assets/img/Rocks/rocks_pt3.png",
       "page": "/projects/rocks.html",
       "images": [
         {
           "src": "/assets/img/artwork1.svg",
           "alt": "Tina",
-          "caption": "Painting 1 - 2024",
-          "description": "Painting 1 - 2024"
+          "caption": "Part 1: Tina (2025)"
         },
         {
           "src": "/assets/img/artwork2.svg",
           "alt": "Mariah",
-          "caption": "Painting 2 - 2023",
-          "description": "Painting 2 - 2023"
+          "caption": "Part 2: Mariah (2025)"
         },
         {
-          "src": "/assets/img/Rocks/rocks_pt3.heic",
+          "src": "/assets/img/Rocks/rocks_pt3.png",
           "alt": "Rocks Pt. 3",
-          "caption": "Rocks Pt. 3: Allan - 2024",
-          "description": "Rocks Pt. 3 - 2024"
+          "caption": "Rocks Pt. 3: Allan (2025)"
         }
       ]
     },
