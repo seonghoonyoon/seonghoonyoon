@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gallery — Seonghoon Yoon</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta name="description" content="Gallery of selected artworks by Seonghoon Yoon.">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="/">Seonghoon Yoon</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Gallery</h1>
+    <p class="lead">Click an image to open the file. Replace the sample images with your artworks in <code>/assets/img/</code>.</p>
+    <section class="gallery">
+      <a class="art" href="/assets/img/artwork1.svg"><img src="/assets/img/artwork1.svg" alt="Artwork 1" loading="lazy"></a>
+      <a class="art" href="/assets/img/artwork2.svg"><img src="/assets/img/artwork2.svg" alt="Artwork 2" loading="lazy"></a>
+      <a class="art" href="/assets/img/artwork3.svg"><img src="/assets/img/artwork3.svg" alt="Artwork 3" loading="lazy"></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="year"></span> Seonghoon Yoon</footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
