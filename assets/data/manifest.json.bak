@@ -7,7 +7,7 @@
       "tags": [
         "Paintings"
       ],
-      "thumbnail": "/assets/img/Rocks/rocks_pt3.png",
+      "thumbnail": "/assets/img/optimized/webp/optimized/webp/Rocks/rocks_pt3-400-400.webp",
       "page": "/projects/rocks.html",
       "images": [
         {
@@ -21,7 +21,7 @@
           "caption": "Part 2: Mariah (2025)"
         },
         {
-          "src": "/assets/img/Rocks/rocks_pt3.png",
+          "src": "/assets/img/optimized/webp/optimized/webp/Rocks/rocks_pt3-400-400.webp",
           "alt": "Rocks Pt. 3",
           "caption": "Rocks Pt. 3: Allan (2025)"
         }
