@@ -1,1 +1,0 @@
-Here I will post my thoughts occasionally.
