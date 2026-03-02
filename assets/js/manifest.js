@@ -7,6 +7,45 @@ async function probeUrl(url){
   }
 }
 
+// Lightweight accessible lightbox
+function ensureLightbox(){
+  if(document.getElementById('site-lightbox')) return;
+  const overlay = document.createElement('div');
+  overlay.id = 'site-lightbox';
+  overlay.className = 'lightbox';
+  overlay.innerHTML = `
+    <div class="lightbox-inner" role="dialog" aria-modal="true" aria-label="Image preview">
+      <button class="lightbox-close" aria-label="Close">×</button>
+      <div class="lightbox-content">
+        <img src="" alt="" />
+        <figcaption class="lightbox-caption"></figcaption>
+        <p class="lightbox-desc"></p>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  const img = overlay.querySelector('img');
+  const cap = overlay.querySelector('.lightbox-caption');
+  const close = overlay.querySelector('.lightbox-close');
+
+  function closeBox(){ overlay.classList.remove('open'); img.src=''; img.alt=''; cap.textContent=''; }
+  overlay.addEventListener('click',(e)=>{ if(e.target===overlay) closeBox(); });
+  close.addEventListener('click', closeBox);
+  document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeBox(); });
+}
+
+function openLightbox(src, alt, caption, description){
+  ensureLightbox();
+  const overlay = document.getElementById('site-lightbox');
+  const img = overlay.querySelector('img');
+  const cap = overlay.querySelector('.lightbox-caption');
+  const desc = overlay.querySelector('.lightbox-desc');
+  img.src = src; img.alt = alt || '';
+  cap.textContent = caption || '';
+  desc.textContent = description || '';
+  overlay.classList.add('open');
+}
+
 function stripAssetsPrefix(src){
   // remove leading /assets/img/ if present
   return src.replace(/^\/assets\/img\//, '');
@@ -141,6 +180,12 @@ async function loadManifest(){
             if(imgObj.caption){
               const cap = document.createElement('figcaption'); cap.textContent = imgObj.caption; fig.appendChild(cap);
             }
+            // open lightbox on click
+            fig.addEventListener('click', async (e)=>{
+              e.preventDefault();
+              const opt = await findOptimizedCandidate(imgObj.src, [1600,800,400]);
+              openLightbox(opt || imgObj.src, imgObj.alt || '', imgObj.caption || '', imgObj.description || '');
+            });
             grid.appendChild(fig);
           }
         }
