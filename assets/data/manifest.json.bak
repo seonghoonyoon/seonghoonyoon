@@ -4,7 +4,9 @@
       "id": "paintings",
       "title": "Paintings",
       "description": "Paintings in oil, acrylic, and gouache.",
-      "tags": ["paintings"],
+      "tags": [
+        "paintings"
+      ],
       "thumbnail": "/assets/img/artwork1.svg",
       "page": "/projects/paintings.html",
       "images": [
@@ -24,7 +26,9 @@
       "id": "photography",
       "title": "Photography",
       "description": "Personal documentation and event photography.",
-      "tags": ["photography"],
+      "tags": [
+        "photography"
+      ],
       "thumbnail": "/assets/img/artwork2.svg",
       "page": "/projects/photography.html",
       "images": [
@@ -44,7 +48,9 @@
       "id": "animation",
       "title": "Animation",
       "description": "Short animations and studies of motion.",
-      "tags": ["animation"],
+      "tags": [
+        "animation"
+      ],
       "thumbnail": "/assets/img/artwork3.svg",
       "page": "/projects/animation.html",
       "images": [
@@ -59,7 +65,9 @@
       "id": "charcoal",
       "title": "Charcoal",
       "description": "Charcoal drawings on paper.",
-      "tags": ["charcoal"],
+      "tags": [
+        "charcoal"
+      ],
       "thumbnail": "/assets/img/artwork1.svg",
       "page": "/projects/charcoal.html",
       "images": [
@@ -74,7 +82,9 @@
       "id": "figures",
       "title": "Figures",
       "description": "Live figure drawing.",
-      "tags": ["figures"],
+      "tags": [
+        "figures"
+      ],
       "thumbnail": "/assets/img/artwork2.svg",
       "page": "/projects/figures.html",
       "images": [
