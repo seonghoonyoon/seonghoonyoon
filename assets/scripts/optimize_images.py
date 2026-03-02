@@ -138,7 +138,14 @@ def main():
         print(f'Source directory not found: {src}')
         return 2
 
-    paths = [p for p in src.rglob('*') if p.is_file() and p.suffix.lower() in SUPPORTED_RASTERS + SUPPORTED_VECTORS]
+    # Avoid scanning the output directory (prevent recursive nesting when out is inside src)
+    out_resolved = out.resolve()
+    paths = [
+        p for p in src.rglob('*')
+        if p.is_file()
+        and p.suffix.lower() in SUPPORTED_RASTERS + SUPPORTED_VECTORS
+        and not str(p.resolve()).startswith(str(out_resolved) + os.sep)
+    ]
     if not paths:
         print('No supported images found in', src)
         return 0
