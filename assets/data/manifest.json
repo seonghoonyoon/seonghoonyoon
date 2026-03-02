@@ -1,26 +1,47 @@
 {
   "projects": [
     {
-      "id": "paintings",
-      "title": "Paintings",
-      "description": "Paintings in oil, acrylic, and gouache.",
+      "id": "rocks",
+      "title": "Rocks",
+      "description": "Paintings in oil of the friends I made through rock climbing.",
       "tags": [
-        "paintings"
-      {
-        "id": "rocks",
-        "title": "Rocks",
-        "description": "Paintings in oil, acrylic, and gouache.",
-        "tags": ["Paintings"],
-        "thumbnail": "/assets/img/artwork1.svg",
-        "page": "/projects/rocks.html",
-          "caption": "Painting 1 — 2024",
-          "description": "Painting 1 — 2024"
+        "Paintings"
+      ],
+      "thumbnail": "/assets/img/optimized/webp/Rocks/rocks_pt3-400.webp",
+      "page": "/projects/rocks.html",
+      "images": [
+        {
+          "src": "/assets/img/artwork1.svg",
+          "alt": "Tina",
+          "caption": "Part 1: Tina (2025)"
         },
         {
           "src": "/assets/img/artwork2.svg",
-          "alt": "Painting 2",
-          "caption": "Painting 2 — 2023",
-          "description": "Painting 2 — 2023"
+          "alt": "Mariah",
+          "caption": "Part 2: Mariah (2025)"
+        },
+        {
+          "src": "/assets/img/optimized/webp/Rocks/rocks_pt3-400.webp",
+          "alt": "Rocks Pt. 3",
+          "caption": "Rocks Pt. 3: Allan (2025)"
+        }
+      ]
+    },
+    {
+      "id": "head-turn",
+      "title": "Head Turn",
+      "description": "Practicing a short animation.",
+      "tags": [
+        "Animation"
+      ],
+      "thumbnail": "/assets/img/artwork3.svg",
+      "page": "/projects/head-turn.html",
+      "images": [
+        {
+          "src": "/assets/img/artwork3.svg",
+          "alt": "Head Turn",
+          "caption": "Head Turn",
+          "description": "Keyframe from the Head Turn animation loop."
         }
       ]
     }

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projects</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta name="description" content="Projects of selected artworks by Joseph Yoon.">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="/">Joseph Yoon</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Projects</h1>
+    <div id="filters" class="filters" role="tablist" aria-label="Filter by medium">
+      <!-- Filter buttons will be injected here -->
+    </div>
+
+    <section id="projects-list" class="projects" aria-live="polite">
+      <!-- Project cards will be injected from /assets/data/manifest.json -->
+    </section>
+    <script src="/assets/js/manifest.js" defer></script>
+  </main>
+
+  <footer class="site-footer">© <span id="year"></span> Joseph Yoon</footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

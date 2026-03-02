@@ -56,12 +56,28 @@ async function findOptimizedCandidate(originalSrc, preferredWidths=[1600,800,400
   const rel = stripAssetsPrefix(originalSrc);
   const relNoExt = rel.replace(/\.[^.]+$/, '');
   const candidates = [];
-  // common locations produced by optimizer: assets/img/optimized/webp/[maybe subfolder]/name-{w}.webp
-  for(const w of preferredWidths){
-    candidates.push(`/assets/img/optimized/webp/${relNoExt}-${w}.webp`);
+  // common locations produced by optimizer: assets/img/optimized/{format}/[maybe subfolder]/name-{w}.{ext}
+  const formats = ['webp','jpg'];
+  for(const fmt of formats){
+    for(const w of preferredWidths){
+      const ext = fmt === 'jpg' ? 'jpg' : fmt;
+      candidates.push(`/assets/img/optimized/${fmt}/${relNoExt}-${w}.${ext}`);
+    }
+    // full-size
+    const fullExt = fmt === 'jpg' ? 'jpg' : fmt;
+    candidates.push(`/assets/img/optimized/${fmt}/${relNoExt}-full.${fullExt}`);
   }
-  // also try full-size
-  candidates.push(`/assets/img/optimized/webp/${relNoExt}-full.webp`);
+
+  // also try un-sized optimized files (no size suffix)
+  candidates.push(`/assets/img/optimized/webp/${relNoExt}.webp`);
+  candidates.push(`/assets/img/optimized/jpg/${relNoExt}.jpg`);
+
+  // fallback: try replacing .heic/.HEIC with jpg/webp in the source folder
+  if(/\.heic$/i.test(originalSrc)){
+    candidates.push(`/assets/img/${relNoExt}.jpg`);
+    candidates.push(`/assets/img/${relNoExt}.jpeg`);
+    candidates.push(`/assets/img/${relNoExt}.webp`);
+  }
 
   for(const c of candidates){
     if(await probeUrl(c)) return c;

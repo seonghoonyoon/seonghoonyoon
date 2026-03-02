@@ -12,7 +12,7 @@
 		<a class="logo" href="/">Joseph Yoon</a>
 		<nav aria-label="Primary navigation">
 			<a href="/">Home</a>
-			<a href="/gallery.html">Gallery</a>
+			<a href="/projects.html">Projects</a>
 			<a href="/about.html">About</a>
 		</nav>
 	</header>
@@ -24,17 +24,40 @@
 		</section>
 
 		<section class="featured">
-			<a class="feature" href="/assets/img/artwork1.svg"><img src="/assets/img/artwork1.svg" alt="Artwork 1" loading="lazy"><h3>Artwork 1</h3></a>
-			<a class="feature" href="/assets/img/artwork2.svg"><img src="/assets/img/artwork2.svg" alt="Artwork 2" loading="lazy"><h3>Artwork 2</h3></a>
-			<a class="feature" href="/assets/img/artwork3.svg"><img src="/assets/img/artwork3.svg" alt="Artwork 3" loading="lazy"><h3>Artwork 3</h3></a>
+			<a class="feature" href="/projects/rocks.html"><img src="/assets/img/artwork1.svg" alt="Rocks" loading="lazy"><h3>Rocks</h3></a>
+			<a class="feature" href="/projects/head-turn.html"><img src="/assets/img/artwork3.svg" alt="Head Turn" loading="lazy"><h3>Head Turn</h3></a>
 		</section>
 
         <section class="hero">
-			<p><a class="btn" href="/gallery.html">View Full Gallery</a></p>
+			<p><a class="btn" href="/projects.html">View All Projects</a></p>
 		</section>
 	</main>
 
 	<footer class="site-footer">© <span id="year"></span> Joseph Yoon</footer>
 	<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+	<script src="/assets/js/manifest.js" defer></script>
+	<script>
+	  document.addEventListener('DOMContentLoaded', async ()=>{
+	    const featured = document.querySelector('.featured');
+	    if(!featured) return;
+	    try{
+	      const res = await fetch('/assets/data/manifest.json');
+	      if(!res.ok) return;
+	      const data = await res.json();
+	      const projects = data.projects || [];
+	      featured.innerHTML = '';
+	      const toShow = projects.slice(0,3);
+	      for(const p of toShow){
+	        const a = document.createElement('a'); a.className='feature'; a.href = p.page || '#';
+	        const img = document.createElement('img'); img.alt = p.title + ' thumbnail'; img.loading='lazy';
+	        // prefer optimized candidate when available
+	        try{ const opt = await findOptimizedCandidate(p.thumbnail, [800,400,1600]); img.src = opt || p.thumbnail }catch(e){ img.src = p.thumbnail }
+	        const h = document.createElement('h3'); h.textContent = p.title || '';
+	        a.appendChild(img); a.appendChild(h);
+	        featured.appendChild(a);
+	      }
+	    }catch(err){ console.error('Failed to load featured projects', err); }
+	  });
+	</script>
 </body>
 </html>

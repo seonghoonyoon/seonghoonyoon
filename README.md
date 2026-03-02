@@ -5,7 +5,7 @@ This repository contains a minimal scaffold for an art portfolio.
 Files added:
 
 - `index.html` — homepage with featured works
-- `gallery.html` — grid gallery
+- `projects.html` — grid of projects
 - `about.html` — supporting pages (contact section merged)
 - `assets/css/style.css` — base stylesheet
 - `assets/img/*` — sample SVG placeholder artworks

@@ -1,97 +1,50 @@
 {
   "projects": [
     {
-      "id": "paintings",
-      "title": "Paintings",
-      "description": "Paintings in oil, acrylic, and gouache.",
+      "id": "rocks",
+      "title": "Rocks",
+      "description": "Paintings in oil of the friends I made through rock climbing.",
       "tags": [
-        "paintings"
+        "Paintings"
       ],
-      "thumbnail": "/assets/img/artwork1.svg",
-      "page": "/projects/paintings.html",
+      "thumbnail": "/assets/img/Rocks/rocks_pt3.heic",
+      "page": "/projects/rocks.html",
       "images": [
         {
           "src": "/assets/img/artwork1.svg",
-          "alt": "Painting 1",
-          "caption": "Painting 1 — 2024"
+          "alt": "Tina",
+          "caption": "Painting 1 - 2024",
+          "description": "Painting 1 - 2024"
         },
         {
           "src": "/assets/img/artwork2.svg",
-          "alt": "Painting 2",
-          "caption": "Painting 2 — 2023"
+          "alt": "Mariah",
+          "caption": "Painting 2 - 2023",
+          "description": "Painting 2 - 2023"
+        },
+        {
+          "src": "/assets/img/Rocks/rocks_pt3.heic",
+          "alt": "Rocks Pt. 3",
+          "caption": "Rocks Pt. 3: Allan - 2024",
+          "description": "Rocks Pt. 3 - 2024"
         }
       ]
     },
     {
-      "id": "photography",
-      "title": "Photography",
-      "description": "Personal documentation and event photography.",
+      "id": "head-turn",
+      "title": "Head Turn",
+      "description": "Practicing a short animation.",
       "tags": [
-        "photography"
-      ],
-      "thumbnail": "/assets/img/artwork2.svg",
-      "page": "/projects/photography.html",
-      "images": [
-        {
-          "src": "/assets/img/artwork2.svg",
-          "alt": "Photo 1",
-          "caption": "Photo 1 — 2022"
-        },
-        {
-          "src": "/assets/img/artwork3.svg",
-          "alt": "Photo 2",
-          "caption": "Photo 2 — 2021"
-        }
-      ]
-    },
-    {
-      "id": "animation",
-      "title": "Animation",
-      "description": "Short animations and studies of motion.",
-      "tags": [
-        "animation"
+        "Animation"
       ],
       "thumbnail": "/assets/img/artwork3.svg",
-      "page": "/projects/animation.html",
+      "page": "/projects/head-turn.html",
       "images": [
         {
           "src": "/assets/img/artwork3.svg",
-          "alt": "Animation 1",
-          "caption": "Animation 1 — loop"
-        }
-      ]
-    },
-    {
-      "id": "charcoal",
-      "title": "Charcoal",
-      "description": "Charcoal drawings on paper.",
-      "tags": [
-        "charcoal"
-      ],
-      "thumbnail": "/assets/img/artwork1.svg",
-      "page": "/projects/charcoal.html",
-      "images": [
-        {
-          "src": "/assets/img/artwork1.svg",
-          "alt": "Charcoal 1",
-          "caption": "Charcoal study"
-        }
-      ]
-    },
-    {
-      "id": "figures",
-      "title": "Figures",
-      "description": "Live figure drawing.",
-      "tags": [
-        "figures"
-      ],
-      "thumbnail": "/assets/img/artwork2.svg",
-      "page": "/projects/figures.html",
-      "images": [
-        {
-          "src": "/assets/img/artwork2.svg",
-          "alt": "Figure 1",
-          "caption": "Figure study"
+          "alt": "Head Turn",
+          "caption": "Head Turn",
+          "description": "Keyframe from the Head Turn animation loop."
         }
       ]
     }

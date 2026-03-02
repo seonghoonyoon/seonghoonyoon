@@ -21,7 +21,7 @@ from pathlib import Path
 from PIL import Image, ImageOps
 from tqdm import tqdm
 
-SUPPORTED_RASTERS = ('.jpg', '.jpeg', '.png', '.webp', '.gif')
+SUPPORTED_RASTERS = ('.jpg', '.jpeg', '.png', '.webp', '.gif', '.heic', '.heif')
 SUPPORTED_VECTORS = ('.svg',)
 
 
