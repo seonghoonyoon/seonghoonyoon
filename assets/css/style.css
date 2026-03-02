@@ -70,3 +70,7 @@ a:focus-visible{outline:3px solid rgba(106,179,255,0.18);outline-offset:3px}
 .filter-btn:hover{background:var(--glass);color:#fff}
 .filter-btn.active{background:var(--accent);color:#04212a;border-color:transparent}
 
+/* Email link styling */
+a[href^="mailto:"]{color:#8fd3ff;font-weight:600;text-decoration:underline}
+a[href^="mailto:"]:hover,a[href^="mailto:"]:focus{color:#cfeeff}
+
