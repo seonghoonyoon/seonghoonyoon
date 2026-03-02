@@ -3,26 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Seonghoon Yoon — Portfolio</title>
+	<title>Joseph Yoon — Portfolio</title>
 	<link rel="stylesheet" href="/assets/css/style.css">
-	<meta name="description" content="Portfolio of Seonghoon Yoon — selected artworks and projects.">
+	<meta name="description" content="Portfolio of Joseph Yoon.">
 </head>
 <body>
 	<header class="site-header">
-		<a class="logo" href="/">Seonghoon Yoon</a>
-		<nav>
+		<a class="logo" href="/">Joseph Yoon</a>
+		<nav aria-label="Primary navigation">
 			<a href="/">Home</a>
 			<a href="/gallery.html">Gallery</a>
 			<a href="/about.html">About</a>
-			<a href="/contact.html">Contact</a>
 		</nav>
 	</header>
 
-	<main class="container">
+	<main id="main" class="container" role="main">
 		<section class="hero">
-			<h1>Selected Works</h1>
-			<p class="lead">A curated selection of recent pieces. Click into the gallery to view more details.</p>
-			<p><a class="btn" href="/gallery.html">View Gallery</a></p>
+			<h1>Featured Works</h1>
+			<p class="lead">A curated selection of recent pieces.</p>
 		</section>
 
 		<section class="featured">
@@ -30,9 +28,13 @@
 			<a class="feature" href="/assets/img/artwork2.svg"><img src="/assets/img/artwork2.svg" alt="Artwork 2" loading="lazy"><h3>Artwork 2</h3></a>
 			<a class="feature" href="/assets/img/artwork3.svg"><img src="/assets/img/artwork3.svg" alt="Artwork 3" loading="lazy"><h3>Artwork 3</h3></a>
 		</section>
+
+        <section class="hero">
+			<p><a class="btn" href="/gallery.html">View Full Gallery</a></p>
+		</section>
 	</main>
 
-	<footer class="site-footer">© <span id="year"></span> Seonghoon Yoon</footer>
+	<footer class="site-footer">© <span id="year"></span> Joseph Yoon</footer>
 	<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>

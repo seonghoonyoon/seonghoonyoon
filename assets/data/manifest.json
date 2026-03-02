@@ -1,0 +1,99 @@
+{
+  "projects": [
+    {
+      "id": "paintings",
+      "title": "Paintings",
+      "description": "Paintings in oil, acrylic, and gouache.",
+      "tags": [
+        "paintings"
+      ],
+      "thumbnail": "/assets/img/artwork1.svg",
+      "page": "/projects/paintings.html",
+      "images": [
+        {
+          "src": "/assets/img/artwork1.svg",
+          "alt": "Painting 1",
+          "caption": "Painting 1 — 2024"
+        },
+        {
+          "src": "/assets/img/artwork2.svg",
+          "alt": "Painting 2",
+          "caption": "Painting 2 — 2023"
+        }
+      ]
+    },
+    {
+      "id": "photography",
+      "title": "Photography",
+      "description": "Personal documentation and event photography.",
+      "tags": [
+        "photography"
+      ],
+      "thumbnail": "/assets/img/artwork2.svg",
+      "page": "/projects/photography.html",
+      "images": [
+        {
+          "src": "/assets/img/artwork2.svg",
+          "alt": "Photo 1",
+          "caption": "Photo 1 — 2022"
+        },
+        {
+          "src": "/assets/img/artwork3.svg",
+          "alt": "Photo 2",
+          "caption": "Photo 2 — 2021"
+        }
+      ]
+    },
+    {
+      "id": "animation",
+      "title": "Animation",
+      "description": "Short animations and studies of motion.",
+      "tags": [
+        "animation"
+      ],
+      "thumbnail": "/assets/img/artwork3.svg",
+      "page": "/projects/animation.html",
+      "images": [
+        {
+          "src": "/assets/img/artwork3.svg",
+          "alt": "Animation 1",
+          "caption": "Animation 1 — loop"
+        }
+      ]
+    },
+    {
+      "id": "charcoal",
+      "title": "Charcoal",
+      "description": "Charcoal drawings on paper.",
+      "tags": [
+        "charcoal"
+      ],
+      "thumbnail": "/assets/img/artwork1.svg",
+      "page": "/projects/charcoal.html",
+      "images": [
+        {
+          "src": "/assets/img/artwork1.svg",
+          "alt": "Charcoal 1",
+          "caption": "Charcoal study"
+        }
+      ]
+    },
+    {
+      "id": "figures",
+      "title": "Figures",
+      "description": "Live figure drawing.",
+      "tags": [
+        "figures"
+      ],
+      "thumbnail": "/assets/img/artwork2.svg",
+      "page": "/projects/figures.html",
+      "images": [
+        {
+          "src": "/assets/img/artwork2.svg",
+          "alt": "Figure 1",
+          "caption": "Figure study"
+        }
+      ]
+    }
+  ]
+}
